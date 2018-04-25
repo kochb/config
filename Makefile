@@ -5,4 +5,4 @@ bash:
 	cp bash/.aliases ~/.aliases
 	cp bash/.env ~/.env
 git:
-	cp -r git ~/.git
+	cp -r git/* ~
