@@ -1,0 +1,12 @@
+[user]
+	email = bradkoch2007@gmail.com
+	name = Brad Koch
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	praise = blame
+[push]
+	default = current
+[core]
+	editor = vim -f
+	pager = less -F -X
+	excludesfile = /Users/kochb/.gitignore
