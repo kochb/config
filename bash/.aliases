@@ -1,0 +1,36 @@
+## Git ##
+
+# Shorthand for common but wordy git commands
+
+alias gs="git status"
+alias gl="git lg"
+alias glh="git lg -n 10"
+alias gf="git fetch -p"
+alias gp="git push"
+alias gr="git rebase"
+grm () { git rebase "origin/${1-master}" }
+alias gc="git commit"
+alias gca="git commit --amend"
+alias gd="git diff"
+alias gds="git diff --staged"
+alias ga="git add"
+alias gkm="git checkout master"
+alias gk="git checkout"
+alias gb="git checkout -b"
+alias gbl="git branch"
+alias gbd="git branch -D"
+gbclean () { git branch --merged "${1-master}" | grep -v "${1-master}" | xargs -n 1 git branch -d }
+
+## Python ##
+
+alias activate="source venv/bin/activate"
+
+## Other ##
+
+# Easier interface for decoding base64
+
+b64 () { echo -n "$1" | base64 $2 }
+
+# Search command line history if ctrl+r isn't working
+
+alias zshtory () { cut -d ";" -f 2- ~/.zsh_history | grep "$1" }
