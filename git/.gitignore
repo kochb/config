@@ -1,4 +1,7 @@
+# MacOS system files
+.DS_Store
 # python bytecode
 *.pyc
-# vim swap files
+# Temporary files
+*~
 *.sw?
