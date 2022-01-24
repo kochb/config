@@ -5,3 +5,6 @@
 # Temporary files
 *~
 *.sw?
+# Virtual environments
+venv*
+env.sh
