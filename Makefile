@@ -5,6 +5,6 @@ bash:
 	cp bash/.aliases ~/.aliases
 	cp bash/.env ~/.env
 git:
-	cp -r git/* ~
+	cp -r git/.* ~
 vim:
 	cp vim/.vimrc ~/.vimrc
